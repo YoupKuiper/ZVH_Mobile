@@ -1,4 +1,4 @@
-package Youp.ZVH_Android.activity;
+package youp.zvh_android.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,7 +9,7 @@ public class SplashActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Intent intent = new Intent(this, Youp.ZVH_Android.activity.RegisterActivity.class);
+        Intent intent = new Intent(this, youp.zvh_android.activity.RegisterActivity.class);
         startActivity(intent);
         finish();
     }

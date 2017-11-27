@@ -1,4 +1,4 @@
-package Youp.ZVH_Android.activity;
+package youp.zvh_android.activity;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -13,12 +13,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
-import Youp.ZVH_Android.R;
-import Youp.ZVH_Android.fragments.ContactFragment;
-import Youp.ZVH_Android.fragments.DiaryFragment;
-import Youp.ZVH_Android.fragments.HomeFragment;
-import Youp.ZVH_Android.fragments.ServiceFragment;
-import Youp.ZVH_Android.helpers.BottomNavigationViewHelper;
+import youp.zvh_android.R;
+import youp.zvh_android.fragments.ContactFragment;
+import youp.zvh_android.fragments.DiaryFragment;
+import youp.zvh_android.fragments.HomeFragment;
+import youp.zvh_android.fragments.ServiceFragment;
+import youp.zvh_android.helpers.BottomNavigationViewHelper;
 
 public class MainActivity extends AppCompatActivity {
 

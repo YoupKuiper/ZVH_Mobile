@@ -1,4 +1,4 @@
-package Youp.ZVH_Android.fragments;
+package youp.zvh_android.fragments;
 
 
 import android.app.DatePickerDialog;
@@ -20,7 +20,7 @@ import com.stepstone.stepper.VerificationError;
 
 import java.util.Calendar;
 
-import Youp.ZVH_Android.R;
+import youp.zvh_android.R;
 
 
 public class RegisterStep1Fragment extends Fragment

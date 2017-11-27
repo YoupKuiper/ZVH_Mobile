@@ -1,4 +1,4 @@
-package Youp.ZVH_Android.activity;
+package youp.zvh_android.activity;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -12,15 +12,16 @@ import com.stepstone.stepper.VerificationError;
 
 import java.util.List;
 
-import Youp.ZVH_Android.R;
-import Youp.ZVH_Android.adapters.StepperAdapter;
-import Youp.ZVH_Android.fragments.RegisterCompletedFragment;
-import Youp.ZVH_Android.fragments.RegisterStep1Fragment;
-import Youp.ZVH_Android.fragments.RegisterStep2Fragment;
+import youp.zvh_android.R;
+import youp.zvh_android.adapters.StepperAdapter;
+import youp.zvh_android.fragments.RegisterCompletedFragment;
+import youp.zvh_android.fragments.RegisterStep1Fragment;
+import youp.zvh_android.fragments.RegisterStep2Fragment;
 
-import Youp.ZVH_Android.models.Consultant;
-import Youp.ZVH_Android.webservice.APIService;
-import Youp.ZVH_Android.webservice.RetrofitClient;
+import youp.zvh_android.models.Consultant;
+import youp.zvh_android.models.User;
+import youp.zvh_android.webservice.APIService;
+import youp.zvh_android.webservice.RetrofitClient;
 import retrofit2.Call;
 import retrofit2.Response;
 import retrofit2.Retrofit;
@@ -45,7 +46,7 @@ public class RegisterActivity extends AppCompatActivity implements Callback<List
         mStepperLayout.setListener(this);
 
 
-        Retrofit retrofit = RetrofitClient.getClient("https://zvh-api.herokuapp.com");
+        Retrofit retrofit = RetrofitClient.getClient("http://192.168.2.3:8000");
 
         apiService = retrofit.create(APIService.class);
 
@@ -53,11 +54,32 @@ public class RegisterActivity extends AppCompatActivity implements Callback<List
     }
 
     private void fetchContent() {
+
         apiService.getAllConsultants().enqueue(this);
     }
 
     @Override
     public void onCompleted(View completeButton) {
+
+        User user = new User();
+        user.setEmailAddress("youpkuiper@gmail.com");
+        user.setDateOfBirth("02-02-1882");
+        user.setFirstname("Joost");
+        user.setLastname("Pieters");
+        user.setPassword("a");
+        user.setGender(1);
+        apiService.register(user).enqueue(new Callback<User>() {
+            @Override
+            public void onResponse(Call<User> call, Response<User> response) {
+                String a = "a";
+            }
+
+            @Override
+            public void onFailure(Call<User> call, Throwable t) {
+                String a = "b";
+
+            }
+        });
 
         //show success message, send email and show login button
         setTitle("Registratie Afronden");
@@ -113,12 +135,12 @@ public class RegisterActivity extends AppCompatActivity implements Callback<List
     @Override
     public void onResponse(Call<List<Consultant>> call, Response<List<Consultant>> response) {
         if (response.isSuccessful() && response.body() != null) {
-            List<Consultant> con = response.body();
+            List<Consultant> allConsultants = response.body();
         }
     }
 
     @Override
     public void onFailure(Call<List<Consultant>> call, Throwable t) {
-
+        String a = "b";
     }
 }

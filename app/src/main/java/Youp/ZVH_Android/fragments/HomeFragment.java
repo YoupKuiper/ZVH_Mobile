@@ -1,4 +1,4 @@
-package Youp.ZVH_Android.fragments;
+package youp.zvh_android.fragments;
 
 
 import android.os.Bundle;
@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import Youp.ZVH_Android.R;
+import youp.zvh_android.R;
 
 
 /**

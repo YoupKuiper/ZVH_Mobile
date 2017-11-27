@@ -1,4 +1,4 @@
-package Youp.ZVH_Android.models;
+package youp.zvh_android.models;
 
 import java.util.List;
 import android.os.Parcel;

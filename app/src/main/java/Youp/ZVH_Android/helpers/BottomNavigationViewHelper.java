@@ -1,4 +1,4 @@
-package Youp.ZVH_Android.helpers;
+package youp.zvh_android.helpers;
 
 import android.support.design.internal.BottomNavigationItemView;
 import android.support.design.internal.BottomNavigationMenuView;

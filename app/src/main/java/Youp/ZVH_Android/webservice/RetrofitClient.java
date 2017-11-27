@@ -1,4 +1,4 @@
-package Youp.ZVH_Android.webservice;
+package youp.zvh_android.webservice;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;

@@ -1,4 +1,4 @@
-package Youp.ZVH_Android.activity;
+package youp.zvh_android.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,7 +7,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 
-import Youp.ZVH_Android.R;
+import youp.zvh_android.R;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -27,7 +27,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         switch (v.getId()) {
             case R.id.loginBtn:
-                Intent intent = new Intent(this, Youp.ZVH_Android.activity.MainActivity.class);
+                Intent intent = new Intent(this, youp.zvh_android.activity.MainActivity.class);
                 startActivity(intent);
                 break;
         }

@@ -1,4 +1,4 @@
-package Youp.ZVH_Android.fragments;
+package youp.zvh_android.fragments;
 
 
 import android.os.Bundle;
@@ -15,7 +15,7 @@ import com.github.mikephil.charting.data.BarEntry;
 import java.util.ArrayList;
 import java.util.List;
 
-import Youp.ZVH_Android.R;
+import youp.zvh_android.R;
 
 
 /**

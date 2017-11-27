@@ -1,8 +1,9 @@
-package Youp.ZVH_Android.webservice;
+package youp.zvh_android.webservice;
 
 import java.util.List;
 
-import Youp.ZVH_Android.models.Consultant;
+import youp.zvh_android.models.Consultant;
+import youp.zvh_android.models.User;
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.DELETE;
@@ -18,6 +19,9 @@ public interface APIService {
 
     @GET("Consultants")
     Call<List<Consultant>> getAllConsultants();
+
+    @POST("/Users/register")
+    Call<User> register (@Body User user);
 
 //    @GET("Articles/{nextId}")
 //    Call<RootObject> getMoreArticles(@Header("x-authtoken") String api_token, @Path("nextId") int nextId, @Query("count") int count);

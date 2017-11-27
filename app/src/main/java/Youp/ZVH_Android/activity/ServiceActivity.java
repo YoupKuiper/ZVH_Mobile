@@ -1,4 +1,4 @@
-package Youp.ZVH_Android.activity;
+package youp.zvh_android.activity;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -9,7 +9,7 @@ import android.widget.Toast;
 import com.codevscolor.materialpreference.activity.MaterialPreferenceActivity;
 import com.codevscolor.materialpreference.callback.MaterialPreferenceCallback;
 
-import Youp.ZVH_Android.R;
+import youp.zvh_android.R;
 
 public class ServiceActivity extends MaterialPreferenceActivity implements MaterialPreferenceCallback {
 

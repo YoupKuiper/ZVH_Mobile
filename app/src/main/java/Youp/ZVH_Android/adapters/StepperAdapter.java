@@ -1,4 +1,4 @@
-package Youp.ZVH_Android.adapters;
+package youp.zvh_android.adapters;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -10,8 +10,8 @@ import com.stepstone.stepper.Step;
 import com.stepstone.stepper.adapter.AbstractFragmentStepAdapter;
 import com.stepstone.stepper.viewmodel.StepViewModel;
 
-import Youp.ZVH_Android.R;
-import Youp.ZVH_Android.fragments.RegisterStep1Fragment;
+import youp.zvh_android.R;
+import youp.zvh_android.fragments.RegisterStep1Fragment;
 
 /**
  * Created by Tiel on 17-11-2017.

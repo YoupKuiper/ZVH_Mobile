@@ -1,4 +1,4 @@
-package Youp.ZVH_Android.fragments;
+package youp.zvh_android.fragments;
 
 
 import android.os.Bundle;
@@ -14,7 +14,7 @@ import com.stepstone.stepper.BlockingStep;
 import com.stepstone.stepper.StepperLayout;
 import com.stepstone.stepper.VerificationError;
 
-import Youp.ZVH_Android.R;
+import youp.zvh_android.R;
 
 /**
  * A simple {@link Fragment} subclass.
