@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="youp.zvh_android.fragments.MeasurementFragment">
+
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:id="@+id/fillInText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateText"
+        android:layout_marginLeft="20dp"
+        android:text="@string/fillInText"
+        />
+
+    <ImageView
+        android:id="@+id/bovendruk_image"
+        android:layout_margin="20dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/fillInText"
+        android:src="@drawable/meting_img1" />
+
+    <EditText
+        android:id="@+id/upperBloodPressure"
+        android:width="@dimen/formFieldSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/lighterGrey"
+        android:layout_margin="@dimen/margin"
+        android:padding="@dimen/margin"
+        android:hint="0"
+        android:textAlignment="center"
+        android:textSize="@dimen/normalText"
+        android:textColor="@color/lightGrey"
+        android:layout_below="@id/fillInText"
+        android:layout_toRightOf="@id/bovendruk_image"/>
+
+
+    <ImageView
+        android:id="@+id/onderdruk_image"
+        android:layout_margin="20dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/bovendruk_image"
+        android:src="@drawable/meting_img2" />
+
+    <EditText
+        android:id="@+id/lowerBloodPressure"
+        android:width="@dimen/formFieldSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/lighterGrey"
+        android:layout_margin="@dimen/margin"
+        android:padding="@dimen/margin"
+        android:hint="0"
+        android:textAlignment="center"
+        android:textSize="@dimen/normalText"
+        android:textColor="@color/lightGrey"
+        android:layout_below="@id/bovendruk_image"
+        android:layout_toRightOf="@id/onderdruk_image"/>
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/onderdruk_image"
+        android:layout_below="@+id/onderdruk_image"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:width="@dimen/buttonS"
+        android:background="@color/lightGrey"
+        android:padding="@dimen/margin"
+        android:text="Annuleren"
+        android:textAllCaps="false"
+        android:textColor="@color/whiteText"
+        android:textSize="@dimen/biggerText" />
+
+    <Button
+        android:padding="@dimen/margin"
+        android:id="@+id/next_button"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Volgende"
+        android:layout_margin="@dimen/margin"
+        android:textColor="@color/whiteText"
+        android:textSize="@dimen/biggerText"
+        android:background="@color/colorAccent"
+        android:textAllCaps="false"
+        android:width="@dimen/buttonS"
+        android:layout_toRightOf="@id/cancel_button"
+        android:layout_below="@id/lowerBloodPressure"
+        />
+
+
+
+</RelativeLayout>
