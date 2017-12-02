@@ -3,6 +3,7 @@ package youp.zvh_android.webservice;
 import java.util.List;
 
 import youp.zvh_android.models.Consultant;
+import youp.zvh_android.models.HealthIssue;
 import youp.zvh_android.models.User;
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -23,6 +24,9 @@ public interface APIService {
     @POST("/Users/register")
     Call<User> register (@Body User user);
 
+    @GET("HealthIssues")
+    Call<List<HealthIssue>> getAllHealthIssues();
+
 //    @GET("Articles/{nextId}")
 //    Call<RootObject> getMoreArticles(@Header("x-authtoken") String api_token, @Path("nextId") int nextId, @Query("count") int count);
 //
@@ -33,7 +37,7 @@ public interface APIService {
 //    Call<RootObject> getLikedArticles(@Header("x-authtoken") String api_token);
 //
 //    @DELETE("Articles/{Id}/like")
-//    Call<Void> UnlikeArticle(@Header("x-authtoken") String api_token, @Path("Id") String id);
+//    Call<Void> Unlik                                                                eArticle(@Header("x-authtoken") String api_token, @Path("Id") String id);
 //
 //    @PUT("Articles/{Id}/like")
 //    Call<Void> likeArticle(@Header("x-authtoken") String api_token, @Path("Id") String id);

@@ -6,6 +6,10 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+
+import java.text.DateFormat;
+import java.util.Date;
 
 import youp.zvh_android.R;
 
@@ -15,6 +19,8 @@ import youp.zvh_android.R;
  */
 public class MeasurementFragment extends Fragment {
 
+    private View v;
+    TextView dateText;
 
     public MeasurementFragment() {
         // Required empty public constructor
@@ -24,8 +30,15 @@ public class MeasurementFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_measurement, container, false);
+        v = inflater.inflate(R.layout.fragment_measurement_step1, container, false);
+
+        dateText = v.findViewById(R.id.dateText);
+
+        dateText.setText(DateFormat.getDateTimeInstance().format(new Date()));
+
+        return v;
 
 
     }

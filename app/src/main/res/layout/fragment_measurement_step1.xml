@@ -1,8 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="youp.zvh_android.fragments.MeasurementFragment">
+    android:id="@+id/measurementStep1">
 
     <TextView
         android:id="@+id/dateText"
@@ -73,7 +72,7 @@
         android:layout_toRightOf="@id/onderdruk_image"/>
 
     <Button
-        android:id="@+id/cancel_button"
+        android:id="@+id/cancel_measurement1_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/onderdruk_image"
@@ -89,23 +88,19 @@
         android:textSize="@dimen/biggerText" />
 
     <Button
-        android:padding="@dimen/margin"
-        android:id="@+id/next_button"
-        android:layout_gravity="center_horizontal"
+        android:id="@+id/to_measurement_step2_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Volgende"
-        android:layout_margin="@dimen/margin"
-        android:textColor="@color/whiteText"
-        android:textSize="@dimen/biggerText"
-        android:background="@color/colorAccent"
-        android:textAllCaps="false"
+        android:layout_alignBaseline="@+id/cancel_measurement1_button"
+        android:layout_alignBottom="@+id/cancel_measurement1_button"
+        android:layout_alignEnd="@+id/lowerBloodPressure"
+        android:layout_gravity="center_horizontal"
         android:width="@dimen/buttonS"
-        android:layout_toRightOf="@id/cancel_button"
-        android:layout_below="@id/lowerBloodPressure"
-        />
-
-
+        android:background="@color/colorAccent"
+        android:padding="@dimen/margin"
+        android:text="Volgende"
+        android:textAllCaps="false"
+        android:textColor="@color/whiteText"
+        android:textSize="@dimen/biggerText" />
 
 </RelativeLayout>

@@ -10,9 +10,9 @@ import com.google.gson.annotations.SerializedName;
 public class Message implements Parcelable
 {
 
-    @SerializedName("messageId")
+    @SerializedName("_id")
     @Expose
-    private String messageId;
+    private String _id;
     @SerializedName("userId")
     @Expose
     private String userId;
@@ -43,7 +43,7 @@ public class Message implements Parcelable
             ;
 
     protected Message(Parcel in) {
-        this.messageId = ((String) in.readValue((String.class.getClassLoader())));
+        this._id = ((String) in.readValue((String.class.getClassLoader())));
         this.userId = ((String) in.readValue((String.class.getClassLoader())));
         this.consultantId = ((String) in.readValue((String.class.getClassLoader())));
         this.message = ((String) in.readValue((String.class.getClassLoader())));
@@ -54,11 +54,11 @@ public class Message implements Parcelable
     }
 
     public String getMessageId() {
-        return messageId;
+        return _id;
     }
 
-    public void setMessageId(String messageId) {
-        this.messageId = messageId;
+    public void setMessageId(String _id) {
+        this._id = _id;
     }
 
     public String getUserId() {
@@ -94,7 +94,7 @@ public class Message implements Parcelable
     }
 
     public void writeToParcel(Parcel dest, int flags) {
-        dest.writeValue(messageId);
+        dest.writeValue(_id);
         dest.writeValue(userId);
         dest.writeValue(consultantId);
         dest.writeValue(message);

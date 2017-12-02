@@ -10,9 +10,9 @@ import com.google.gson.annotations.SerializedName;
 public class Measurement implements Parcelable
 {
 
-    @SerializedName("measurementId")
+    @SerializedName("_id")
     @Expose
-    private String measurementId;
+    private String _id;
     @SerializedName("userId")
     @Expose
     private String userId;
@@ -52,7 +52,7 @@ public class Measurement implements Parcelable
             ;
 
     protected Measurement(Parcel in) {
-        this.measurementId = ((String) in.readValue((String.class.getClassLoader())));
+        this._id = ((String) in.readValue((String.class.getClassLoader())));
         this.userId = ((String) in.readValue((String.class.getClassLoader())));
         this.bloodPressureUpper = ((Integer) in.readValue((Integer.class.getClassLoader())));
         this.bloodPressureLower = ((Integer) in.readValue((Integer.class.getClassLoader())));
@@ -66,11 +66,11 @@ public class Measurement implements Parcelable
     }
 
     public String getMeasurementId() {
-        return measurementId;
+        return _id;
     }
 
-    public void setMeasurementId(String measurementId) {
-        this.measurementId = measurementId;
+    public void setMeasurementId(String _id) {
+        this._id = _id;
     }
 
     public String getUserId() {
@@ -130,7 +130,7 @@ public class Measurement implements Parcelable
     }
 
     public void writeToParcel(Parcel dest, int flags) {
-        dest.writeValue(measurementId);
+        dest.writeValue(_id);
         dest.writeValue(userId);
         dest.writeValue(bloodPressureUpper);
         dest.writeValue(bloodPressureLower);

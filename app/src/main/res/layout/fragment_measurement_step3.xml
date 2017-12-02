@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/measurementStep3"
+    tools:context="youp.zvh_android.fragments.MeasurementFragment"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:id="@+id/extraRemarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/extraRemarks"
+        android:layout_below="@id/dateText"/>
+
+    <EditText
+        android:id="@+id/extraRemarksInput"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/lighterGrey"
+        android:layout_below="@id/extraRemarks"/>
+
+    <Button
+        android:id="@+id/cancel_measurement3_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/extraRemarksInput"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:width="@dimen/buttonS"
+        android:background="@color/lightGrey"
+        android:padding="@dimen/margin"
+        android:text="Terug"
+        android:textAllCaps="false"
+        android:textColor="@color/whiteText"
+        android:textSize="@dimen/biggerText" />
+
+    <Button
+        android:id="@+id/complete_measurement_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cancel_measurement3_button"
+        android:layout_alignBottom="@+id/cancel_measurement3_button"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_toRightOf="@id/cancel_measurement3_button"
+        android:width="@dimen/buttonS"
+        android:background="@color/colorAccent"
+        android:padding="@dimen/margin"
+        android:text="Opslaan"
+        android:textAllCaps="false"
+        android:textColor="@color/whiteText"
+        android:textSize="@dimen/biggerText" />
+
+</RelativeLayout>

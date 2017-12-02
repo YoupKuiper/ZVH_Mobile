@@ -43,4 +43,18 @@
     <string name="title_activity_service">ServiceActivity</string>
     <string name="tab_title" />
     <string name="go_to_summary" />
+
+    <!-- Measurement -->
+    <string name="fillInText">1. Vul uw bloeddruk in (mmHg)</string>
+    <string name="fillInText2">2. Gezondheidsklachten</string>
+    <string name="none">geen</string>
+    <string name="yesNamely">Ja, namelijk</string>
+    <string name="shortOfBreath">Kortademigheid</string>
+    <string name="wheezing">Piep op de borst</string>
+    <string name="hardToBreathe">Benauwdheid</string>
+    <string name="heartPounding">Hartkloppingen</string>
+    <string name="irregularHeartbeat">Onregelmatige hartslag</string>
+    <string name="heartSkipping">Overslaan van het hart</string>
+    <string name="otherNamely">Anders, namelijk:</string>
+    <string name="extraRemarks">Extra / opmerkingen</string>
 </resources>

@@ -46,7 +46,7 @@ public class RegisterActivity extends AppCompatActivity implements Callback<List
         mStepperLayout.setListener(this);
 
 
-        Retrofit retrofit = RetrofitClient.getClient("http://192.168.2.3:8000");
+        Retrofit retrofit = RetrofitClient.getClient("https://zvh-api.herokuapp.com/");
 
         apiService = retrofit.create(APIService.class);
 

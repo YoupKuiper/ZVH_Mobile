@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/measurementStep2"
+    tools:context="youp.zvh_android.fragments.MeasurementFragment"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:id="@+id/fillInText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateText"
+        android:text="@string/fillInText2"
+        />
+
+    <RadioButton
+        android:id="@+id/noneRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fillInText"
+        android:text="@string/none"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fillInText"
+        android:layout_toRightOf="@id/noneRadio"
+        android:text="@string/yesNamely"/>
+
+    <CheckBox
+        android:id="@+id/checkbox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/shortOfBreath"
+        android:layout_below="@id/noneRadio"/>
+
+    <CheckBox
+        android:id="@+id/checkbox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wheezing"
+        android:layout_below="@id/checkbox1"/>
+
+    <CheckBox
+        android:id="@+id/checkbox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hardToBreathe"
+        android:layout_below="@id/checkbox2"/>
+
+    <CheckBox
+        android:id="@+id/checkbox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/heartPounding"
+        android:layout_below="@id/checkbox3"/>
+
+    <CheckBox
+        android:id="@+id/checkbox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/irregularHeartbeat"
+        android:layout_below="@id/checkbox4"/>
+
+    <CheckBox
+        android:id="@+id/checkbox6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/heartSkipping"
+        android:layout_below="@id/checkbox5"/>
+
+    <TextView
+        android:id="@+id/otherNamely"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/otherNamely"
+        android:layout_below="@id/checkbox6"/>
+
+    <EditText
+        android:id="@+id/otherNamelyInput"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/lighterGrey"
+        android:layout_below="@id/otherNamely"/>
+
+    <Button
+        android:id="@+id/cancel_measurement2_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/onderdruk_image"
+        android:layout_below="@+id/otherNamelyInput"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:width="@dimen/buttonS"
+        android:background="@color/lightGrey"
+        android:padding="@dimen/margin"
+        android:text="Terug"
+        android:textAllCaps="false"
+        android:textColor="@color/whiteText"
+        android:textSize="@dimen/biggerText" />
+
+    <Button
+        android:id="@+id/to_measurement_step3_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cancel_measurement2_button"
+        android:layout_alignBottom="@+id/cancel_measurement2_button"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/checkbox5"
+        android:width="@dimen/buttonS"
+        android:background="@color/colorAccent"
+        android:padding="@dimen/margin"
+        android:text="Volgende"
+        android:textAllCaps="false"
+        android:textColor="@color/whiteText"
+        android:textSize="@dimen/biggerText" />
+
+</RelativeLayout>

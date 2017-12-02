@@ -5,6 +5,7 @@
     <dimen name="normalText">15sp</dimen>
     <dimen name="biggerText">20sp</dimen>
     <dimen name="buttonSize">300dp</dimen>
+    <dimen name="buttonS">150dp</dimen>
     <dimen name="buttonL">400dp</dimen>
     <dimen name="formFieldSize">600dp</dimen>
 
